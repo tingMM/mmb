@@ -29,3 +29,8 @@ mongodb/*.json：数据库文件<br>
 6. 最后一次团队项目了，大家加油！
 <br>
 <br>
+
+## TODO
+1. 修改mmb-dev为线上环境<br>
+2. 修改`coordination.md`文件中的json格式
+3. 添加公共样式文件以及公共js文件
