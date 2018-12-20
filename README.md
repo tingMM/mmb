@@ -2,8 +2,15 @@
 
 在开发之前一定要仔细阅读该文档，该文档会实时更新组员最新的开发情况。
 
+## 目录以文件说明
 
+MMBApiServer：服务器后端代码
+docs：说明文档目录
+mmb-demo：mmb演示版本
+mmb-dev：mmb开发版本
+mongodb：mongodb数据库文件
 
+mongodb/*.json：数据库文件
 
 ## CHANGELOG
 
