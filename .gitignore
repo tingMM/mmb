@@ -7,4 +7,4 @@ readme.html
 mongod.lock
 *.pdb
 *.docx
-
+node_modules
