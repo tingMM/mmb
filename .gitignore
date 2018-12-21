@@ -1,5 +1,7 @@
 .DS_Store
 desktop.ini
+Thumbs.db
+$RECYCLE.BIN/
 *.exe
 readme.html
 项目启动.md
@@ -7,6 +9,6 @@ readme.html
 mongod.lock
 *.pdb
 *.docx
-node_modules
-.vs
-.vscode
+node_modules/
+.vs/
+.vscode/
