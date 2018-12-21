@@ -1,6 +1,8 @@
 # mmb 项目开发指南
 
-在开发之前一定要仔细阅读该文档，该文档会实时更新组员最新的开发情况。
+在开发之前一定要仔细阅读该文档，该文档会实时更新组员最新的开发情况。<br>
+建议各组员watching该项目，以便项目更新后会第一时间通知你
+
 <br>
 <br>
 
@@ -9,7 +11,7 @@
 MMBApiServer：服务器后端代码<br>
 docs：说明文档目录<br>
 mmb-demo：mmb演示版本<br>
-mmb-dev：mmb开发版本<br>
+mmv-dev：mmb开发版本<br>
 mongodb：mongodb数据库文件<br>
 <br>
 <br>
@@ -36,7 +38,13 @@ mongodb/*.json：数据库文件<br>
 <br>
 <br>
 
+###  2018-12-21 13:10
+1. 新增加项目[项目职责文档](docs/structure.md)，
+<br>
+<br>
+
 ## TODO
-1. 修改mmb-dev为线上环境<br>
-2. 修改`coordination.md`文件中的json格式
-3. 添加公共样式文件以及公共js文件
+
+* [x] 修改mmb-dev为线上环境<br>
+* [ ] 修改`coordination.md`文件中的json格式<br>
+* [x] 添加公共样式文件以及公共js文件<br>
