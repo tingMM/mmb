@@ -30,6 +30,12 @@ mongodb/*.json：数据库文件<br>
 <br>
 <br>
 
+### 2018-12-21 12:18
+1. 项目架构搭建完成
+2. 更新mui框架为最新版
+<br>
+<br>
+
 ## TODO
 1. 修改mmb-dev为线上环境<br>
 2. 修改`coordination.md`文件中的json格式
