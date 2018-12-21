@@ -34,7 +34,7 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
    ```shell
    # 复制下面这行代码即可
    git remote add  upstream https://github.com/Yggdrasill-7C9/mmb.git 
-   
+
    # 检查是否添加成功：如果显示如下及证明成功添加上游仓库
    git remote -v 
    # origin	https://github.com/oyzz1234/mmb.git (fetch)
@@ -51,10 +51,10 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
    # 以下代码直接复制即可
    # 获取上游代码
    git fetch upstream
-   
+
    # 检查你的 fork’s 本地 master 分支，如果不在master 分支就切换到该分支
    git checkout master
-   
+
    # 合并来自 upstream/master 的更改到本地 master 分支上。
    git merge upstream/master
    ```
@@ -64,7 +64,7 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
    ```shell
    # 第一次提交代码的时候需要使用该命令，之后就不用了
    git push -u origin master
-   
+
    # 以后提交代码的时候使用以下名命令就行
    git push
    ```
