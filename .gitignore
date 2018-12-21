@@ -9,3 +9,4 @@ mongod.lock
 *.docx
 node_modules
 .vs
+.vscode
