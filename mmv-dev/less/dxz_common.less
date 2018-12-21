@@ -1,0 +1,155 @@
+// 导入基础样式
+@import "dxz_base.less";
+
+
+// 颜色
+@mainColor: #ff4e49;
+@borderColor: #e6e6e6;
+@footerBacgroundColor: #232a34;
+
+html {
+    overflow-y: hidden;
+}
+
+// 头部信息
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background: @mainColor;
+    border-bottom: 1px solid @borderColor;
+    z-index: 999;
+    >.logo {
+        padding: 12px;
+        >a>img {
+            max-width: 185.5px;
+            max-height: 25px;
+            overflow: hidden;
+        }
+    }
+    >.icon-back {
+        >a{
+            float: left;
+            width: 24px;
+            height: 44px;
+            line-height:44px;
+            display: block;
+            font-weight: 700;
+            font-size: 30px;
+            color: white;
+            padding-left: 20px;
+            font-family: 'SimSun';
+            >i{
+              font-size: 30px;  
+            }
+        }
+        >.header-text {
+            color: white;
+            text-align: center;
+            line-height: 44px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: arial;
+        }
+    }
+    >.appdown {
+        position: absolute;
+        right: 0;
+        top: -2px;
+        padding: 7px;
+        >a>img {
+            max-width: 34px;
+            max-height: 34px;
+            overflow: hidden;
+        }
+        
+    }
+}
+
+// 搜索框
+#form-search{
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 999;
+    >.search{
+        position: relative;
+        padding-right: 70px;
+        max-height: 30px;
+        >input[type=search] {
+            width: 100%;
+            background: #f1f1f1;
+            font-size: 13px;
+            padding-right: 50px;
+            padding-left: 20px;
+
+            -webkit-appearance: none;
+            border: none;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 15px;
+        }
+        >input[type=button] {
+            position: absolute;
+            width: 63px;
+            background: #565656;
+            color: #fff;
+            top: 0;
+            right: 0;
+            font-size: 16px;
+
+            -webkit-appearance: none;
+            border: none;
+            height: 30px;
+            // line-height: 30px;
+            border-radius: 15px;
+        }
+
+    }
+}
+
+
+// 主体信息
+#main {
+    margin-top: 100px;
+}
+
+// 底部信息
+#footer {
+    background-color: @footerBacgroundColor;
+    .foot_top {
+        border-bottom: 1px solid #727272;
+        height: 34px;
+        line-height: 34px;
+        margin-top: 25px;
+        clear: both;
+        text-align: center;
+
+        a {
+            float: left;
+            width: 30%;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            border-right: 1px solid #727272;
+            &:nth-child(3){
+                border-right: none;
+            }
+        }
+    }
+    .footer_bottom {
+        font-size: 12px;
+        padding: 15px 0;
+        color: #bebebe;
+        text-align: center;
+        a:first-child {
+            color: @mainColor;
+        }
+        a:last-child {
+            color: #bebebe;
+        }
+    }
+}
