@@ -213,11 +213,17 @@ html {
 html {
   overflow-y: hidden;
 }
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
 #header {
+  flex: 0;
   position: fixed;
   width: 100%;
-  top: 0;
   height: 50px;
+  top: 0;
   background: #ff4e49;
   border-bottom: 1px solid #e6e6e6;
   z-index: 999;
@@ -265,6 +271,7 @@ html {
   overflow: hidden;
 }
 #form-search {
+  flex: 0;
   width: 100%;
   position: fixed;
   top: 50px;
@@ -303,9 +310,14 @@ html {
   border-radius: 15px;
 }
 #main {
+  flex: 1;
   margin-top: 100px;
+  position: relative;
 }
 #footer {
+  flex: 0;
+  width: 100%;
+  height: 100px;
   background-color: #232a34;
 }
 #footer .foot_top {
@@ -317,24 +329,24 @@ html {
   text-align: center;
 }
 #footer .foot_top a {
-  border: 0px;
-  display: block;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
   float: left;
+  width: 30%;
   font-size: 14px;
-  border-right: 1px solid #727272;
   text-align: center;
   color: #fff;
-  display: inline-block;
+  border-right: 1px solid #727272;
 }
 #footer .foot_top a:nth-child(3) {
   border-right: none;
 }
+#footer .foot_top a i.fa.fa-arrow-circle-up {
+  font-size: inherit;
+}
 #footer .footer_bottom {
+  height: 64px;
   font-size: 12px;
   padding: 15px 0;
-  color: ##bebebe;
+  color: #bebebe;
   text-align: center;
 }
 #footer .footer_bottom a:first-child {
@@ -343,25 +355,29 @@ html {
 #footer .footer_bottom a:last-child {
   color: #bebebe;
 }
-#main > .accordion-title {
+#main {
+  font-size: 16px;
+}
+#main .accordion-title {
   height: 35px;
   line-height: 35px;
   padding-left: 10px;
-  background-color: #f7f7f7;
-  font-size: 16px;
+  background-color: 4#f7f7f7;
+  font-size: inherit;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
-#main > .accordion-title > a {
+#main .accordion-title > a {
   color: #333;
   font-size: inherit;
 }
-#main > .accordion-title > a > i {
+#main .accordion-title > a > i {
   font-size: inherit;
 }
-#main > .brand-title {
-  font-size: 16px;
+#main .brand-title {
+  font-size: inherit;
   color: #333;
   padding-left: 10px;
   line-height: 30px;
+  font-weight: bold;
 }

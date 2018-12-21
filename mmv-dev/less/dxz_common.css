@@ -213,11 +213,17 @@ html {
 html {
   overflow-y: hidden;
 }
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
 #header {
+  flex: 0;
   position: fixed;
   width: 100%;
-  top: 0;
   height: 50px;
+  top: 0;
   background: #ff4e49;
   border-bottom: 1px solid #e6e6e6;
   z-index: 999;
@@ -265,6 +271,7 @@ html {
   overflow: hidden;
 }
 #form-search {
+  flex: 0;
   width: 100%;
   position: fixed;
   top: 50px;
@@ -303,17 +310,19 @@ html {
   border-radius: 15px;
 }
 #main {
+  flex: 1;
   margin-top: 100px;
+  position: relative;
 }
 #footer {
+  flex: 0;
+  width: 100%;
   background-color: #232a34;
 }
 #footer .foot_top {
   border-bottom: 1px solid #727272;
   height: 34px;
   line-height: 34px;
-  margin-top: 25px;
-  clear: both;
   text-align: center;
 }
 #footer .foot_top a {
@@ -327,7 +336,11 @@ html {
 #footer .foot_top a:nth-child(3) {
   border-right: none;
 }
+#footer .foot_top a i.fa.fa-arrow-circle-up {
+  font-size: inherit;
+}
 #footer .footer_bottom {
+  height: 64px;
   font-size: 12px;
   padding: 15px 0;
   color: #bebebe;
