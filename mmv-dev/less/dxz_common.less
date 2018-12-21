@@ -11,12 +11,19 @@ html {
     overflow-y: hidden;
 }
 
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
 // 头部信息
 #header {
+    flex: 0;
     position: fixed;
     width: 100%;
-    top: 0;
     height: 50px;
+    top: 0;
     background: @mainColor;
     border-bottom: 1px solid @borderColor;
     z-index: 999;
@@ -69,6 +76,7 @@ html {
 
 // 搜索框
 #form-search{
+    flex: 0;
     width: 100%;
     position: fixed;
     top: 50px;
@@ -111,23 +119,23 @@ html {
     }
 }
 
-
 // 主体信息
 #main {
+    flex: 1;
     margin-top: 100px;
+    position: relative;
 }
 
 // 底部信息
 #footer {
+    flex: 0;
+    width: 100%;
     background-color: @footerBacgroundColor;
     .foot_top {
         border-bottom: 1px solid #727272;
         height: 34px;
         line-height: 34px;
-        margin-top: 25px;
-        clear: both;
         text-align: center;
-
         a {
             float: left;
             width: 30%;
@@ -138,9 +146,13 @@ html {
             &:nth-child(3){
                 border-right: none;
             }
+            i.fa.fa-arrow-circle-up {
+                font-size: inherit;
+            }
         }
     }
     .footer_bottom {
+        height: 64px;
         font-size: 12px;
         padding: 15px 0;
         color: #bebebe;

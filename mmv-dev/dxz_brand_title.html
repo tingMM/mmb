@@ -22,7 +22,7 @@
 
 <body>
   <!-- 带logo的头部 -->
-  <!-- <header id="header" class="mui-bar mui-bar-nav">
+  <header id="header" class="mui-bar mui-bar-nav">
     <div class="logo">
       <a href="hyl_index.html" title="慢慢买">
         <img src="images/header_logo.png" alt=""></a>
@@ -30,9 +30,9 @@
     <div class="appdown">
       <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
     </div>
-  </header> -->
+  </header>
   <!-- 不带logo的头部 -->
-  <header id="header">
+  <!-- <header id="header">
     <div class="icon-back">
       <a href="javascript:history.back();">
         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -42,49 +42,40 @@
     <div class="appdown">
       <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
     </div>
-  </header>
+  </header> -->
   <section id="form-search">
     <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" value="搜索"></form>
   </section>
   <main id="main">
-    <section class="accordion-title">
-      <a href="hyl_index.html">
-        首页
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-      </a>
-      <a href="">
-        全部分类
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-      </a>
-    </section>
-    <section class="brand-title">热门品牌排行</section>
-    <!-- 折叠面板 -->
-    <ul class="mui-table-view">
-      <li class="mui-table-view-cell mui-collapse">
-        <a class="mui-navigate-right" href="#">表单</a>
-        <div class="mui-collapse-content">
-          <form class="mui-input-group">
-            <div class="mui-input-row">
-              <label>Input</label>
-              <input type="text" placeholder="普通输入框">
-            </div>
-            <div class="mui-input-row">
-              <label>Input</label>
-              <input type="text" class="mui-input-clear" placeholder="带清除按钮的输入框" data-input-clear="3"><span class="mui-icon mui-icon-clear mui-hidden"></span>
-            </div>
-
-            <div class="mui-input-row mui-plus-hidden">
-              <label>Input</label>
-              <input type="text" class="mui-input-speech mui-input-clear" placeholder="语音输入" data-input-clear="4" data-input-speech="4"><span class="mui-icon mui-icon-clear mui-hidden"></span><span class="mui-icon mui-icon-speech"></span>
-            </div>
-            <div class="mui-button-row">
-              <button class="mui-btn mui-btn-primary" type="button" onclick="return false;">确认</button>&nbsp;&nbsp;
-              <button class="mui-btn mui-btn-primary" type="button" onclick="return false;">取消</button>
-            </div>
-          </form>
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <section class="accordion-title">
+                <a href="hyl_index.html">
+                  首页
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  全部分类
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </section>
+              <section class="brand-title">热门品牌排行</section>
+              <!-- 折叠面板 -->
+              <ul class="mui-table-view" id="jsbrand-title">
+                <li class="mui-table-view-cell mui-collapse">
+                  <a class="mui-navigate-right" href="#">表单</a>
+                  <ul class="mui-table-view">
+                      <li class="mui-table-view-cell">
+                        hhh
+                      </li>
+                      <li class="mui-table-view-cell">
+                        hhh
+                      </li>
+                  </ul>
+                </li>
+              </ul>
         </div>
-      </li>
-    </ul>
+    </div>
   </main>
   <footer id="footer">
       <div class="foot_top">
@@ -121,3 +112,15 @@
 <script src="./lib/zepto/zepto.min.js"></script>
 <!-- 自己写的文件 -->
 <script src="./js/dxz_brand_titile.js"></script>
+<script type="text/template" id="tmpl-brand-title">
+  {{each result}}
+  <li class="mui-table-view-cell mui-collapse">
+    <a class="mui-navigate-right" href="#" data-brandTitle="{{$value.brandTitleId}}">{{$value.brandTitle}}</a>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+          hhh
+        </li>
+    </ul>
+  </li>
+  {{/each}}
+</script>

@@ -11,16 +11,17 @@
   <link rel="stylesheet" href="./lib/mui/css/mui.picker.css">
   <link rel="stylesheet" href="./lib/mui/css/mui.poppicker.css">
   <!-- 导入自己写的样式文件 -->
-  <link rel="stylesheet/less" href="">
+  <!-- <link rel="stylesheet/less" href=""> -->
   <!-- 引入less.js编译器文件 -->
   <script src="./lib/less/less.js"></script>
   <!-- 在页面前引入rem.js 等页面加载出来之前生效样式马上执行 -->
   <script src="./js/common/rem.js"></script>
-
+  
 </head>
 
 <body>
-  <!-- 带logo的头部 -->
+  <div id="sticky-container">
+      <!-- 带logo的头部 -->
   <!-- <header id="header" class="mui-bar mui-bar-nav">
     <div class="logo">
       <a href="hyl_index.html" title="慢慢买">
@@ -32,42 +33,49 @@
   </header> -->
   <!-- 不带logo的头部 -->
   <header id="header">
-    <div class="icon-back">
-      <a href="javascript:history.back();">
-        <i class="fa fa-angle-left" aria-hidden="true"></i>
-      </a>
-      <div class="header-text"><span>国内折扣</span></div>
-    </div>
-    <div class="appdown">
-      <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
-    </div>
-  </header>
-  <section id="form-search">
-    <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" value="搜索"></form>
-  </section>
-  <!-- 主体部分 -->
-  <main id="main">
-  </main>
-  <!-- 底部部分 -->
-  <footer id="footer">
-      <div class="foot_top">
-        <a href="##">登录</a> 
-        <a href="##">注册</a> 
-        <a href="#">
-          <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 
-          返回顶部
+      <div class="icon-back">
+        <a href="javascript:history.back();">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
         </a>
-        </div>
-      <div class="footer_bottom">
-          <p>
-            <a href="##">手机APP下载</a> 
-            <a href="hyl_index.html">
-              慢慢买手机版-- 掌上比价平台
-            </a>
-          </p>
-          <p>m.manmanbuy.com</p>
+        <div class="header-text"><span>国内折扣</span></div>
       </div>
-  </footer>
+      <div class="appdown">
+        <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+      </div>
+    </header>
+    <section id="form-search">
+      <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" value="搜索"></form>
+    </section>
+    <!-- 主体部分 -->
+    <main id="main">
+      <!-- 区域滚动 -->
+      <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            <!--这里放置真实显示的DOM内容-->
+          </div>
+        </div>
+    </main>
+    <!-- 底部部分 -->
+    <footer id="footer">
+        <div class="foot_top">
+          <a href="##">登录</a> 
+          <a href="##">注册</a> 
+          <a href="#">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 
+            返回顶部
+          </a>
+          </div>
+        <div class="footer_bottom">
+            <p>
+              <a href="##">手机APP下载</a> 
+              <a href="hyl_index.html">
+                慢慢买手机版-- 掌上比价平台
+              </a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+  </div>
 </body>
 
 </html>
