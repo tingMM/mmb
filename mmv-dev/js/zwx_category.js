@@ -67,6 +67,8 @@ $(function () {
         .then(res => {
             res.forEach((el, i) => {
                 let categoryList = categoryPage.splitArr(el.result, 9);
+                console.log(categoryList);
+                
                 let categories = categoryList.map((val, i) => `<div class="mui-slider-item">
                     <ul class="mui-table-view mui-grid-view mui-grid-9">
                         ${val.map(e =>
