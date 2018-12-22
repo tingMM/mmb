@@ -28,7 +28,7 @@
         <img src="images/header_logo.png" alt=""></a>
       </div>
     <div class="appdown">
-      <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+      <a href="javascript:void(0);"><img src="images/header_app.png" alt="手机app下载"></a>
     </div>
   </header>
   <!-- 不带logo的头部 -->
@@ -40,7 +40,7 @@
       <div class="header-text"><span>国内折扣</span></div>
     </div>
     <div class="appdown">
-      <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+      <a href="javascript:void(0);"><img src="images/header_app.png" alt="手机app下载"></a>
     </div>
   </header> -->
   <section id="form-search">
@@ -58,44 +58,35 @@
                   全部分类
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
-              </section>
-              <section class="brand-title">热门品牌排行</section>
-              <!-- 折叠面板 -->
-              <ul class="mui-table-view" id="jsbrand-title">
-                <li class="mui-table-view-cell mui-collapse">
-                  <a class="mui-navigate-right" href="#">表单</a>
-                  <ul class="mui-table-view">
-                      <li class="mui-table-view-cell">
-                        hhh
-                      </li>
-                      <li class="mui-table-view-cell">
-                        hhh
-                      </li>
-                  </ul>
-                </li>
-              </ul>
+            </section>
+            <section class="brand-title-rank">热门品牌排行</section>
+            <!-- 折叠面板 -->
+            <ul class="mui-table-view" id="jsbrand-category">
+              &nbsp;&nbsp;暂无数据
+            </ul>
+            <footer id="footer">
+                <div class="foot_top">
+                  <a href="javascript:void(0);">登录</a> 
+                  <a href="javascript:void(0);">注册</a> 
+                  <a href="#">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 
+                    返回顶部
+                  </a>
+                  </div>
+                <div class="footer_bottom">
+                    <p>
+                      <a href="javascript:void(0);">手机APP下载</a> 
+                      <a href="hyl_index.html">
+                        慢慢买手机版-- 掌上比价平台
+                      </a>
+                    </p>
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </footer>
         </div>
     </div>
   </main>
-  <footer id="footer">
-      <div class="foot_top">
-        <a href="##">登录</a> 
-        <a href="##">注册</a> 
-        <a href="#">
-          <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 
-          返回顶部
-        </a>
-        </div>
-      <div class="footer_bottom">
-          <p>
-            <a href="##">手机APP下载</a> 
-            <a href="hyl_index.html">
-              慢慢买手机版-- 掌上比价平台
-            </a>
-          </p>
-          <p>m.manmanbuy.com</p>
-      </div>
-  </footer>
+
 </body>
 
 </html>
@@ -112,15 +103,49 @@
 <script src="./lib/zepto/zepto.min.js"></script>
 <!-- 自己写的文件 -->
 <script src="./js/dxz_brand_titile.js"></script>
-<script type="text/template" id="tmpl-brand-title">
+
+<!-- 模板 -->
+<!-- <script type="text/template" id="tmpl-brand-category">
   {{each result}}
   <li class="mui-table-view-cell mui-collapse">
-    <a class="mui-navigate-right" href="#" data-brandTitle="{{$value.brandTitleId}}">{{$value.brandTitle}}</a>
-    <ul class="mui-table-view">
+    <a class="mui-navigate-right brand-title" href="javascript:void(0);" data-brandTitleId="{{$value.brandTitleId}}">{{$value.brandTitle}}</a>
+    <ul class="mui-table-view" id="jsbrands{{$value.brandTitleId}}">
+ 
+    </ul>
+  </li>
+  {{/each}}
+</script> -->
+
+<!-- 一级菜单 -->
+<script type="text/template" id="tmpl-brand-category">
+  {{each brandCategories}}
+  <li class="mui-table-view-cell mui-collapse">
+    <a class="mui-navigate-right brand-title" href="javascript:void(0);">
+      {{$value.brandTitle}}
+    </a>
+    <ul class="mui-table-view" id="jsbrand-title">
+        {{each $value.brandNames}}
         <li class="mui-table-view-cell">
-          hhh
+          <a href="./dxz_brand_content.html?brandtitleid={{$value.brandTitleId}}">{{$value.brandTitle}}</a>
         </li>
+        {{/each}}  
     </ul>
   </li>
   {{/each}}
 </script>
+
+<!-- <script type="text/template" id="tmpl-brand-name">
+  {{each result}}
+  <li class="mui-table-view-cell">
+    {{$value.brandName}}
+  </li>
+  {{/each}}  
+</script> -->
+<!-- 二级菜单 -->
+<!-- <script type="text/template" id="tmpl-brand-title">
+  {{each result}}
+  <li class="mui-table-view-cell">
+    {{$value.brandName}}
+  </li>
+  {{/each}}  
+</script> -->
