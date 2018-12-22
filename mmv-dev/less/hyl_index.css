@@ -94,6 +94,9 @@ input {
 .f_r {
   float: right;
 }
+body {
+  padding-top: 100px;
+}
 #header {
   position: fixed;
   width: 100%;
@@ -141,8 +144,81 @@ input {
   height: 30px;
   line-height: 30px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 13px;
 }
-#slider {
-  padding-top: 50px;
+#form-search .search-box {
+  width: 100%;
+  background: #f1f1f1;
+  font-size: 13px;
+  padding-right: 108px;
+  padding-left: 20px;
+}
+#form-search .search-btn {
+  position: absolute;
+  width: 63px;
+  background: #565656;
+  color: #fff;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+#search-title .search-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#search-title .search-list > li {
+  width: 25%;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+#search-title .search-list > li a {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+#search-title .search-list > li a img {
+  width: 50px;
+}
+#list-title .list-title-content {
+  height: 35px;
+  width: 100%;
+  background-color: red;
+  padding-left: 10px;
+  line-height: 35px;
+}
+#list-title .list-title-content span {
+  color: #fff;
+}
+#list-title .list-title-content img {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#recommen-product {
+  height: 46px;
+  padding: 6px;
+}
+#recommen-product .recommen-product-list {
+  border: 1px solid red;
+  line-height: 34px;
+  text-align: center;
+}
+#recommen .list-title-content {
+  height: 35px;
+  width: 100%;
+  background-color: red;
+  padding-left: 10px;
+  line-height: 35px;
+}
+#recommen .list-title-content span {
+  color: #fff;
+}
+#recommen .list-title-content img {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
 }
