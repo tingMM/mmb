@@ -40,10 +40,10 @@ $(function () {
             let list = arr.map(el =>
                 `<li class="mui-table-view-cell mui-media ">
                 <div class="mui-slider-right mui-disabled">
-                    <a class="mui-btn mui-btn-blue btn-detail" data-categoryid="${el.categoryId}" data-productId="${el.productId}">详情</a>
-                    <a class="mui-btn mui-btn-red ">赞</a>
+                    <a class="mui-btn mui-btn-blue btn-detail" data-categoryid="${el.categoryId}" data-productId="${el.productId}">评价</a>
+                    <a class="mui-btn mui-btn-red btn-star">赞</a>
                 </div>
-                <a href="javascript:;" class="mui-navigate-right product mui-slider-handle">
+                <a href="javascript:;" data-categoryid="${el.categoryId}" data-productId="${el.productId}" class="mui-navigate-right product mui-slider-handle">
                     <div class="pic">
                         ${el.productImg}
                     </div>
@@ -75,8 +75,8 @@ $(function () {
         page = 1;
     productPage.getCategoryById(id)
         .then(res => {
-            console.log(res);
-            return productPage.getProductList(id)
+            $('#navigation nav').html(`<a href="hyl_index.html">首页</a> &gt <a href="zwx_category.html">全部分类</a> &gt <a href="#">${res.result[0].category}</a>`);
+            return productPage.getProductList(id);
         })
         .then(res => productPage.renderList(res.result));
 
@@ -113,9 +113,15 @@ $(function () {
             }
         }
     });
-
-    $('.product-list').on('tap','.btn-detail',function () {
+    $('.product-list').on('tap', '.product', function () {
         location = `zwx_productDetails.html?categoryid=${this.dataset.categoryid}&productId=${this.dataset.productid}`;
+    })
+    $('.product-list').on('tap', '.btn-detail', function (e) {
+        location = `zwx_productDetails.html?categoryid=${this.dataset.categoryid}&productId=${this.dataset.productid}&position=title`;
+        e.stopImmediatePropagation();
+    })
+    $('.product-list').on('tap', '.btn-star', function () {
+        mui.toast('点赞成功', { duration: 'long', type: 'div' });
     })
 
 

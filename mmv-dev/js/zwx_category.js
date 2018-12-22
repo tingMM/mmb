@@ -67,15 +67,11 @@ $(function () {
         .then(res => {
             res.forEach((el, i) => {
                 let categoryList = categoryPage.splitArr(el.result, 9);
-                console.log(categoryList);
-                
                 let categories = categoryList.map((val, i) => `<div class="mui-slider-item">
                     <ul class="mui-table-view mui-grid-view mui-grid-9">
                         ${val.map(e =>
-                    `<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-                            <a href="zwx_productList.html?categoryid=${e.categoryId}">
-                                ${e.category}
-                            </a>
+                        `<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+                            <a href="zwx_productList.html?categoryid=${e.categoryId}">${e.category}</a>
                         </li>`).join('')}
                     </ul>
                 </div>`).join('');

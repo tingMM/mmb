@@ -1,3 +1,5 @@
+@import "dxz_common.less";
+
 #main {
     .titles {
         >li.mui-active {
@@ -13,15 +15,18 @@
                     padding-bottom: .4rem;
                     .mui-table-view {
                         background: #efeff4;
+                        margin: 0;
                         .mui-table-view-cell {
                             background: #efeff4;
-                            padding: 2px 5px 2px 21px;
+                            padding: .05rem;
                             border: 0;
                             a {
-                                box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+                                padding: .05rem;
+                                box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
                                 background: #fff;
                                 font-size: 0.14rem;
                                 padding: 0;
+                                line-height: .3rem;
                             }
                             &::after {
                                 display: none;
