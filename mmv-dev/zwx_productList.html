@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>比价搜索</title>
+    <title>商品列表</title>
     <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/zwx_category.less">
+    <link rel="stylesheet/less" href="less/zwx_productList.less">
     <script src="lib/less/less.js"></script>
 </head>
 
@@ -22,22 +22,20 @@
             <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
         </div>
     </header>
-    
-    <section id="form-search">
-        <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button"
-                value="搜索"></form>
+
+    <section id="navigation">
+        <nav></nav> <div class="tools"><button type="button" class="mui-btn">筛选</button></div>
     </section>
 
     <main id="main">
-        <div class="mui-content">
-            <div class="mui-card">
-                <ul class="mui-table-view titles">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="mui-table-view product-list">
 
                 </ul>
             </div>
         </div>
     </main>
-
     <footer id="footer">
         <div class="foot_top">
             <a href="##">登录</a>
@@ -57,12 +55,10 @@
             <p>m.manmanbuy.com</p>
         </div>
     </footer>
-
-
     <script src="js/common/rem.js"></script>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
-    <script src="js/zwx_category.js"></script>
+    <script src="js/zwx_productList.js"></script>
 </body>
 
 </html>
