@@ -45,6 +45,42 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
 
 4. 组员在写好一个模块后，必须及时commit，并且commit信息不能随便乱写，一定要写好备注，以便其他成员及组长能一目了然的看懂你修改过的文件
 
+   ```shell
+   # 1、首先检查自己代码的状态
+   git status 
+   # ==================================
+   On branch master                                                           
+   Your branch is ahead of 'origin/master' by 31 commits.                     
+     (use "git push" to publish your local commits)                           
+                                                                              
+   Changes not staged for commit:                                             
+     (use "git add ..." to update what will be committed)               
+     (use "git checkout -- ..." to discard changes in working directory)
+                                                                              
+           modified:   mmv-dev/oyzz_youhuiquan.html                           
+                                                                              
+   Untracked files:                                                           
+     (use "git add ..." to include in what will be committed)           
+                                                                              
+           mmv-dev/oyzz_youhuiquanlingqu.html                                 
+                                                                              
+   no changes added to commit (use "git add" and/or "git commit -a")
+   # ==================================
+   # 以oyzz的代码为例：
+   # modified：表示已经更改过的代码
+   # Untracked files:  表示为被追踪的代码，即没有被add过，这个时候需要add一下
+   
+   # 2、检查完自己代码状态之后，add你要提交的代码到 Storage Area
+   git add mmv-dev/oyzz_youhuiquan.html    
+   git add mmv-dev/oyzz_youhuiquanlingqu.html 
+   
+   # 3、确认你的代码已经修改完毕后，commit 你的代码到本地仓库，并注明你修改的信息
+   git commit -m 'oyzz添加了xxx功能，实现了xxxx模块，修复了xxx bug'
+   
+   # 4、commit 代码之后，已经要拉取最新的代码，拉取方法如下。
+   
+   ```
+
 5. 在你准备提交代码（push）之前，**一定要先从组长那里拉取最新的代码**！！！！！！
 
    ```shell
