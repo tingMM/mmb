@@ -11,18 +11,31 @@
     <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet/less" href="less/hyl_index.less">
     <script src="lib/less/less.js"></script>
+    <script src="js/common/rem.js"></script>
 </head>
 <body>
     <header id="header">
         <div class="logo"><a href="#"><img src="./images/header_logo.png" alt=""></a></div>
         <div class="download"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
     </header>
-    <!-- <section id="form-search">
-        <form action="#" class="search">
-            <input type="search" placeholder="请输入你想比价的商品">
-            <input type="botton" value="搜索">
+    <section id="form-search">
+        <form action="#" class="search-form">
+            <input class="search-box" type="search" placeholder="请输入你想比价的商品">
+            <input class="search-btn" type="botton" value="搜索">
         </form>
-    </section> -->
+    </section>
+    <section id="search-title">
+        <ul class="search-list">
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+        </ul>
+    </section>
     <section id="slider">
             <!-- mui-slider轮播图大容器 类似于 swiper-container -->
             <div id="slider" class="mui-slider">
@@ -77,7 +90,24 @@
     <section id="list-title">
         <div class="list-title-content"><span>超值折扣推荐</span><img src="./images/more.png" alt=""></div>
     </section>
-    <section id="banner"></section>
+    <section id="banner">
+        <ul>
+            <li><a href="#" class="product-list">
+                <div class="product-img"><img src="images/ic_pp.png" alt=""></div>
+                <div class="product-msg">
+                    <div><span>移动端：法国进口波尔多十字布伊堡干白葡萄酒750ml </span></div>
+                    <div class="jd-comment">
+                        <i class="mall">京东商城| </i>
+                        <span class="product-comment">
+                            <i class="">我</i>
+                            <i></i>
+                        </span>
+                    </div>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </section>
     <main id="recommen-product">
         <div class="recommen-product-list product-list cu-list">
             <ul></ul>
@@ -96,6 +126,7 @@
                 <p>m.manmanbuy.com</p>
             </div>
     </footer>
+    <i class="mui-icon-extra-comment"></i>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
