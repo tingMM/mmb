@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>比价搜索</title>
+    <title>商品详情</title>
     <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/zwx_category.less">
+    <link rel="stylesheet/less" href="less/zwx_productDetails.less">
     <script src="lib/less/less.js"></script>
 </head>
 
@@ -22,20 +22,36 @@
             <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
         </div>
     </header>
-    
-    <section id="form-search">
-        <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button"
-                value="搜索"></form>
+
+    <section id="navigation">
+        <nav></nav>
+        <div class="tools"><button type="button" class="mui-btn">筛选</button></div>
     </section>
 
     <main id="main">
-        <div class="mui-content">
-            <div class="mui-card">
-                <ul class="mui-table-view titles">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
 
-                </ul>
+                <div class="detail">
+
+                </div>
+
+                <div class="comment mui-content">
+                    <div id="title" class="title">
+                        网友评价
+                    </div>
+                    <ul class="mui-table-view comments">
+                       
+                    </ul>
+
+                </div>
+
             </div>
         </div>
+
+
+
+
     </main>
 
     <footer id="footer">
@@ -57,12 +73,10 @@
             <p>m.manmanbuy.com</p>
         </div>
     </footer>
-
-
     <script src="js/common/rem.js"></script>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
-    <script src="js/zwx_category.js"></script>
+    <script src="js/zwx_productDetails.js"></script>
 </body>
 
 </html>

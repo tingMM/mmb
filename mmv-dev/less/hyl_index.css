@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+  width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+button,
+form,
+img,
+input,
+select {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+textarea {
+  width: 95%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+li,
+ol,
+ul {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+img,
+input {
+  vertical-align: middle;
+}
+input {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+}
+.f_l {
+  float: left;
+}
+.f_r {
+  float: right;
+}
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  background-color: red;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  z-index: 999;
+  box-sizing: border-box;
+}
+#header .logo {
+  padding: 12px;
+}
+#header .logo a {
+  display: block;
+}
+#header .logo a img {
+  max-height: 25px;
+  overflow: hidden;
+}
+#header .download {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  padding: 7px;
+}
+#header .download a img {
+  max-height: 34px;
+  overflow: hidden;
+}
+#form-search {
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  top: 50px;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+}
+#form-search input {
+  -webkit-appearance: none;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+#slider {
+  padding-top: 50px;
+}
