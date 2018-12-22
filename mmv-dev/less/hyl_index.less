@@ -150,41 +150,38 @@ body{
     }
 }
 
-
-#form-search {
-    width: 100%;
+#form-search{
+    // height: 50px;
     position: fixed;
-    height: 50px;
-    top: 50px;
-    padding: 10px;
     background-color: #fff;
-    z-index: 999;
-    display: flex;
-    input {
-        -webkit-appearance: none;
-        border: none;
-        height: 30px;
-        line-height: 30px;
-        border-radius: 15px;
-        font-size: 13px;
-    }
-    .search-box {
-        width: 100%;
-        background: #f1f1f1;
-        font-size: 13px;
-        padding-right: 108px;
-        padding-left: 20px;
-    }
-    .search-btn {
-        position: absolute;
-        width: 63px;
-        background: #565656;
-        color: #fff;
-        top: 10px;
-        right: 10px; // font-size: 16px;
-        text-align: center;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid red;
+    .search-form{
+        // width: 100%;
+        height: 50px;
+        // background-color: pink;
+        display: flex;
+        padding: 10px;
+        .search-box{
+            height: 30px;
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            border-radius: 30px;
+        }
+        .search-btn{
+            width: 63px;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 30px;
+            background-color: red;
+            color: #fff;
+        }
     }
 }
+
 #search-title{
     .search-list{
         display: flex;
@@ -196,7 +193,7 @@ body{
             a{   
                 display: block;
                 text-align: center; 
-                vertical-align: middle;           
+                // vertical-align: middle;           
                 img{
                     width: 50px;
                 }
@@ -206,7 +203,41 @@ body{
     }
 }
 
+#banner{
+  li{
+      width: 100%;
+      background-color: pink;
+      
+      a.product-list{
+        display: flex;
+        height: 150px;
+        .product-img{
+            width: 100px;
+            height: 100%;
+            padding: 10px;
+            padding-top: 35PX;
+            img{
+                width: 100%;
+            }
+        }
+        .product-msg{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+            .jd-comment{
+                .mall{
 
+                }
+                .pproduct-comment{
+                    float: right;
+                }
+            }
+        }
+    }
+  }
+}
 #list-title {
     .list-title-content {
         height: 35px;
