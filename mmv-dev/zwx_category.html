@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>比价搜索</title>
-    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/zwx_category.css">
+    <link rel="stylesheet/less" href="less/zwx_category.less">
+    <script src="lib/less/less.js"></script>
 </head>
-<body>
-    
 
+<body>
+    <header id="header" class="mui-bar mui-bar-nav">
+        <div class="logo">
+            <a href="hyl_index.html" title="慢慢买">
+                <img src="images/header_logo.png" alt=""></a>
+        </div>
+        <div class="appdown">
+            <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+        </div>
+    </header>
+    
+    <section id="form-search">
+        <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button"
+                value="搜索"></form>
+    </section>
+
+    <main id="main">
+        <div class="mui-content">
+            <div class="mui-card">
+                <ul class="mui-table-view titles">
+
+
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="foot_top">
+            <a href="##">登录</a>
+            <a href="##">注册</a>
+            <a href="hyl_index.html">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                首页
+            </a>
+        </div>
+        <div class="footer_bottom">
+            <p>
+                <a href="##">手机APP下载</a>
+                <a href="hyl_index.html">
+                    慢慢买手机版-- 掌上比价平台
+                </a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <div id="express">
+        <div class="container">
+            <a class="nav-icon" href="category.html"><img src="images/ic_search.png" alt="比价搜索"></a>
+            <a class="nav-icon" href="moneyctrl.html"><img src="images/ic_cu.png" alt="省钱控"></a>
+            <a class="nav-icon" href="inlanddiscount.html"><img src="images/ic_coudanpin.png" alt="国内折扣"></a>
+            <a class="nav-icon" href="baicaijia.html"><img src="images/ic_bcj.png" alt="白菜价"></a>
+            <a class="nav-icon" href="moneyctrl.html"><img src="images/haitao.png" alt="海淘折扣"></a>
+            <a class="nav-icon" href="coupon.html"><img src="images/ic_temai.png" alt="优惠券"></a>
+            <a class="nav-icon" href="history.html"><img src="images/ic_trend.png" alt="查历史价"></a>
+            <a class="nav-icon" href="more.html"><img src="images/gengduo.png" alt="更多"></a>
+            <a class="nav-icon" href="gsproduct.html"><img src="images/ic_coudanpin.png" alt="凑单品"></a>
+            <a class="nav-icon" href="category.html"><img src="images/ic_kb.png" alt="口碑排行"></a>
+            <a class="nav-icon" href="brandtitle.html"><img src="images/ic_pp.png" alt="品牌大全"></a>
+            <a class="nav-icon menu" href="javascript:" ><img src="images/ic_mall.png" alt="商城导航"></a>
+        </div>
+    </div>
+
+    <script src="js/common/rem.js"></script>
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/zepto/fx.js"></script>
+    <script src="js/zwx_express.js"></script>
     <script src="js/zwx_category.js"></script>
+    
 </body>
+
 </html>
