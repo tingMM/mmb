@@ -451,7 +451,7 @@
 <script type="text/template" id="tmpl-brandSales">
     {{each result}}
     <li>
-        <a href="zwx_productDetails.html?productId={{$value.productId}}&categotyId={{$value.categoryId}}" 
+        <a href="zwx_productDetails.html?categoryid={{$value.categoryId}}&productId={{$value.productId}}" 
            title="{{$value.productName}}">
             <div class="pic">  
                 {{$value.productImg}}
@@ -475,7 +475,8 @@
 <script type="text/template" id="tmpl-brandComments">
     {{each result}}
     <li>
-        <a href="zwx_productDetails.html?productId={{$value.productId}}&categoryId={{$value.categoryId}}">
+        <a href="zwx_productDetails.html?categoryid={{$value.categoryId}}&productId={{$value.productId}}" 
+        title="{{$value.productName}}">
             <div class="commentTitle">
                 <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视" width="100" height="100">
                 <span>
