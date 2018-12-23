@@ -121,10 +121,10 @@ $(function () {
         e.stopImmediatePropagation();
     })
     $('.product-list').on('tap', '.btn-star', function () {
-        mui.toast('点赞成功', { duration: 'long', type: 'div' });
+        mui.alert('感谢您的支持','点赞成功');
     })
 
-
+    $('#express').express();
 });
 
 function getQueryString(name) {

@@ -107,11 +107,9 @@ $(function () {
         .catch(res => $('.comments').html(`<li class="mui-table-view-cell"><p class="content">暂无评论</p></li>`))
         .finally(() => {
             if (position) {
-                console.log(2);
-                
                 $('.mui-scroll').css({
                     "transform": `translate3d(0px, -404px, 0px) translateZ(0px)`,
-                    "transition-duration": `0ms`
+                    "transition-duration": `300ms`
                 })
             }
         })
@@ -120,6 +118,7 @@ $(function () {
         deceleration: 0.0005
     });
 
+    $('#express').express();
 })
 
 
