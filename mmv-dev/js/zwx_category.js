@@ -47,8 +47,7 @@ $(function () {
     let categoryPage = new Category();
     categoryPage.getCategoryTitle()
         .then(res => {
-            let titles = res.map((val, i) =>
-                `<li class="mui-table-view-cell mui-collapse">
+            let titles = res.map((val, i) => `<li class="mui-table-view-cell mui-collapse">
                 <a class="mui-navigate-right" href="#">${val.title}</a>
                 <div class="mui-collapse-content">
                     <div class="mui-content">
@@ -67,10 +66,9 @@ $(function () {
         .then(res => {
             res.forEach((el, i) => {
                 let categoryList = categoryPage.splitArr(el.result, 9);
-                let categories = categoryList.map((val, i) => `<div class="mui-slider-item">
+                let categories = categoryList.map(val => `<div class="mui-slider-item">
                     <ul class="mui-table-view mui-grid-view mui-grid-9">
-                        ${val.map(e =>
-                        `<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+                        ${val.map(e => `<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
                             <a href="zwx_productList.html?categoryid=${e.categoryId}">${e.category}</a>
                         </li>`).join('')}
                     </ul>
@@ -91,5 +89,7 @@ $(function () {
             })
         });
     mui.init();
+
+    $('#express').express();
 
 })
