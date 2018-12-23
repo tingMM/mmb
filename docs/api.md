@@ -6,7 +6,7 @@
 
 ![](https://raw.githubusercontent.com/Yggdrasill-7C9/mmb/master/docs/images/1-1.png)
 
-想··![](https://raw.githubusercontent.com/Yggdrasill-7C9/mmb/master/docs/images/1-2.png)
+![](https://raw.githubusercontent.com/Yggdrasill-7C9/mmb/master/docs/images/1-2.png)
 
 ### 1.2、首页上用到的请求的api说明
 
