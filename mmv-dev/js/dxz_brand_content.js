@@ -49,7 +49,9 @@ $(function(){
     $.ajax({
         type: "get",
         url: "http://58.218.199.45:14985/api/getproductcom",
-        data: "data",
+        data: {
+            productid:0
+        },
         dataType: "json",
         success: function (response) {
             console.log('最新评论',response)

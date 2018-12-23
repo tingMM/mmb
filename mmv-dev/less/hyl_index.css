@@ -94,6 +94,9 @@ input {
 .f_r {
   float: right;
 }
+body {
+  padding-top: 100px;
+}
 #header {
   position: fixed;
   width: 100%;
@@ -126,23 +129,116 @@ input {
   overflow: hidden;
 }
 #form-search {
-  width: 100%;
   position: fixed;
-  height: 50px;
-  top: 50px;
-  padding: 10px;
   background-color: #fff;
-  z-index: 999;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid red;
+}
+#form-search .search-form {
+  height: 50px;
   display: flex;
+  padding: 10px;
 }
-#form-search input {
-  -webkit-appearance: none;
-  border: none;
+#form-search .search-form .search-box {
   height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
+  flex: 1;
+  text-align: left;
   font-size: 14px;
+  border-radius: 30px;
 }
-#slider {
-  padding-top: 50px;
+#form-search .search-form .search-btn {
+  width: 63px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: red;
+  color: #fff;
+}
+#search-title .search-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#search-title .search-list > li {
+  width: 25%;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+#search-title .search-list > li a {
+  display: block;
+  text-align: center;
+}
+#search-title .search-list > li a img {
+  width: 50px;
+}
+#banner li {
+  width: 100%;
+  background-color: pink;
+}
+#banner li a.product-list {
+  display: flex;
+  height: 150px;
+}
+#banner li a.product-list .product-img {
+  width: 100px;
+  height: 100%;
+  padding: 10px;
+  padding-top: 35PX;
+}
+#banner li a.product-list .product-img img {
+  width: 100%;
+}
+#banner li a.product-list .product-msg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+#banner li a.product-list .product-msg .jd-comment .pproduct-comment {
+  float: right;
+}
+#list-title .list-title-content {
+  height: 35px;
+  width: 100%;
+  background-color: red;
+  padding-left: 10px;
+  line-height: 35px;
+}
+#list-title .list-title-content span {
+  color: #fff;
+}
+#list-title .list-title-content img {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#recommen-product {
+  height: 46px;
+  padding: 6px;
+}
+#recommen-product .recommen-product-list {
+  border: 1px solid red;
+  line-height: 34px;
+  text-align: center;
+}
+#recommen .list-title-content {
+  height: 35px;
+  width: 100%;
+  background-color: red;
+  padding-left: 10px;
+  line-height: 35px;
+}
+#recommen .list-title-content span {
+  color: #fff;
+}
+#recommen .list-title-content img {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
 }

@@ -45,7 +45,8 @@
 		<div class="list-title-content"><span>超值折扣推荐</span> <img src="images/more.png" width="20" height="20"></div>
 	</section>
 	<script type="text/html" id="indexWares">
-		<% for(var i=0; i< result.length; i++){ %> <li class="clearfix ui-border-b">
+		<% for(var i=0; i< result.length; i++){ %> 
+			<li class="clearfix ui-border-b">
                 	<a href="save-sale.html?productid=<%= result[i].productId%>">
                 		<div class="pic"> <%=# result[i].productImgSm%> </div>
                 		<div class="clearfix info">
