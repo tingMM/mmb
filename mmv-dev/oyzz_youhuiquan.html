@@ -2,12 +2,14 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
         <title>优惠券</title>
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="/css/oyzz_youhuiquan.css">
+        <link rel="stylesheet" href="css/oyzz_base.css">
+        <link rel="stylesheet" href="css/oyzz_youhuiquan.css">
+        <script src="js/common/rem.js" charset="utf-8"></script>
     </head>
     <body>
-        <header id="header">
+        <header class="discount">
             <div class="discount_left f_l">
                 <a href="#"><</a>
             </div>
@@ -19,37 +21,36 @@
             </div>
         </header>
         <div class="discount_banner">
-            <ul>
-                <li><a href="couponproduct.html?couponid=0">
+            <ul id="discount_banner_con">
+                <li><a href="oyzz_youhuiquanlingqu.html?couponid=0">
                     <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
                     <p>肯德基</p>
                 </a></li>
-                <li><a href="http://58.218.199.45:14985/api/getcouponproduct">
+                <li><a href="oyzz_youhuiquanlingqu.html?couponid=1">
                     <img src="http://www.juanlaoda.com/ImageUpload/2013310204621492.jpg" alt="">
                     <p>必胜客</p>
                 </a></li>
-                <li><a href="http://58.218.199.45:14985/api/getcouponproduct">
+                <li><a href="oyzz_youhuiquanlingqu.html?couponid=2">
                     <img src="http://www.juanlaoda.com/ImageUpload/2013310205511184.jpg" alt="">
                     <p>棒约翰</p>
                 </a></li>
-                <li><a href="couponproduct.html?couponid=3">
+                <li><a href="oyzz_youhuiquanlingqu.html?couponid=3">
                     <img src="http://www.juanlaoda.com/ImageUpload/201321212356588.jpg" alt="">
                     <p>阿根达斯</p>
                 </a></li>
             </ul>
         </div>
-        <div class="footer">
+        <div class="discount_footer">
             <a href="#">首页</a>
             &nbsp<&nbsp
             <a href="#">优惠券</a>
         </div>
-        <footer id="footer">
+        <footer id="ct100_foot">
             <div class="foot_top">
                 <a href="#">登陆</a>
                 <a href="#">注册</a>
-                <a href="#" style="width : 40% ; border : 0;" id="rtt">
-                    <img src="images/top.png" width="16" height="16">
-                    "返回顶部"
+                <a href="#" id="rtt" style="width: 40%; border: 0;">
+                    返回顶部
                 </a>
             </div>
             <div class="footer">
@@ -62,5 +63,4 @@
         </footer>
     </body>
     <script src="lib/jquery/jquery-3.1.1.min.js" charset="utf-8"></script>
-    <script src="" charset="utf-8"></script>
 </html>

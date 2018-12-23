@@ -34,7 +34,7 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
    ```shell
    # 复制下面这行代码即可
    git remote add  upstream https://github.com/Yggdrasill-7C9/mmb.git 
-
+   
    # 检查是否添加成功：如果显示如下及证明成功添加上游仓库
    git remote -v 
    # origin	https://github.com/oyzz1234/mmb.git (fetch)
@@ -45,16 +45,52 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
 
 4. 组员在写好一个模块后，必须及时commit，并且commit信息不能随便乱写，一定要写好备注，以便其他成员及组长能一目了然的看懂你修改过的文件
 
+   ```shell
+   # 1、首先检查自己代码的状态
+   git status 
+   # ==================================
+   On branch master                                                           
+   Your branch is ahead of 'origin/master' by 31 commits.                     
+     (use "git push" to publish your local commits)                           
+                                                                              
+   Changes not staged for commit:                                             
+     (use "git add ..." to update what will be committed)               
+     (use "git checkout -- ..." to discard changes in working directory)
+                                                                              
+           modified:   mmv-dev/oyzz_youhuiquan.html                           
+                                                                              
+   Untracked files:                                                           
+     (use "git add ..." to include in what will be committed)           
+                                                                              
+           mmv-dev/oyzz_youhuiquanlingqu.html                                 
+                                                                              
+   no changes added to commit (use "git add" and/or "git commit -a")
+   # ==================================
+   # 以oyzz的代码为例：
+   # modified：表示已经更改过的代码
+   # Untracked files:  表示为被追踪的代码，即没有被add过，这个时候需要add一下
+   
+   # 2、检查完自己代码状态之后，add你要提交的代码到 Storage Area
+   git add mmv-dev/oyzz_youhuiquan.html    
+   git add mmv-dev/oyzz_youhuiquanlingqu.html 
+   
+   # 3、确认你的代码已经修改完毕后，commit 你的代码到本地仓库，并注明你修改的信息
+   git commit -m 'oyzz添加了xxx功能，实现了xxxx模块，修复了xxx bug'
+   
+   # 4、commit 代码之后，已经要拉取最新的代码，拉取方法如下。
+   
+   ```
+
 5. 在你准备提交代码（push）之前，**一定要先从组长那里拉取最新的代码**！！！！！！
 
    ```shell
    # 以下代码直接复制即可
    # 获取上游代码
    git fetch upstream
-
+   
    # 检查你的 fork’s 本地 master 分支，如果不在master 分支就切换到该分支
    git checkout master
-
+   
    # 合并来自 upstream/master 的更改到本地 master 分支上。
    git merge upstream/master
    ```
@@ -64,7 +100,7 @@ xxxx：以自己名字首字母缩写命名的分支，自己实际开发的分�
    ```shell
    # 第一次提交代码的时候需要使用该命令，之后就不用了
    git push -u origin master
-
+   
    # 以后提交代码的时候使用以下名命令就行
    git push
    ```
