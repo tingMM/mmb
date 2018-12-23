@@ -1,4 +1,10 @@
 $(function(){
+
+    mui('.mui-scroll-wrapper').scroll({
+        indicators: false, //是否显示滚动条
+        deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    });
+
     // 1.给导航栏三个页面注册点击事件
     // 点击对应选项出现对应的下滑列表
 
@@ -111,6 +117,7 @@ $(function(){
                 var html = template('productTpl',data);
                 // 渲染到页面上
                 $('.product-info').html(html);
+                
                 
             }
         }) 
