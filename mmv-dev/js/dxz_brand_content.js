@@ -52,7 +52,10 @@ $(function(){
         data: "data",
         dataType: "json",
         success: function (response) {
-            
+            console.log('最新评论',response)
+            $('.brandComments ul').html(template('tmpl-brandComments',{
+                result:response.result
+            }))  
         }
     });
 })
