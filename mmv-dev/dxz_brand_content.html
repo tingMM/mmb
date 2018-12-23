@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买项目</title>
+  <!-- 引入第三方包所需要的样式文件 -->
+  <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.picker.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.poppicker.css">
+  <!-- 导入自己写的样式文件 
+    这里导入的是common.less,使用中自己页面的less引入common.less即可
+  -->
+  <link rel="stylesheet/less" href="./less/ dxz_brand_content.less">
+  <!-- 引入less.js编译器文件 -->
+  <script src="./lib/less/less.js"></script>
+  <!-- 在页面前引入rem.js 等页面加载出来之前生效样式马上执行 -->
+  <script src="./js/common/rem.js"></script>
+  
+</head>
+
+<body>
+  <!-- 带logo的头部 -->
+  <!-- <header id="header" class="mui-bar mui-bar-nav">
+    <div class="logo">
+      <a href="hyl_index.html" title="慢慢买">
+        <img src="images/header_logo.png" alt=""></a>
+      </div>
+    <div class="appdown">
+      <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+    </div>
+  </header> -->
+  <!-- 不带logo的头部 -->
+  <header id="header">
+      <div class="icon-back">
+        <a href="javascript:history.back();">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </a>
+        <div class="header-text"><span>国内折扣</span></div>
+      </div>
+      <div class="appdown">
+        <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+      </div>
+  </header>
+  <section id="form-search">
+    <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" value="搜索"></form>
+  </section>
+  <!-- 主体部分 -->
+  <main id="main">
+    <!-- 区域滚动 -->
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--这里放置真实显示的DOM内容-->
+          <div class="content">
+            <section class="accordion-title">
+                <a href="hyl_index.html">
+                    首页
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    全部分类
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </section>  
+            <div class="brand-content">
+                <nav>
+                    <span class="active" data-target="#section1">商品品牌排行</span> 
+                    <span data-target="#section2" class="">销量排行</span> 
+                    <span data-target="#section3" class="">最新评论</span>
+                </nav>
+                <!-- 商品品牌排行 -->
+                <section class="brandRanks active" id="section1">
+                    <ul>
+                        <li>暂无数据</li>
+                    </ul>
+                    <!-- <ul> 
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>1</em>
+                                <div class="inner">
+                                    <div class="title"> 三星平板电视 </div>
+                                    <p> 30天全网销售：242408件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>2</em>
+                                <div class="inner">
+                                    <div class="title"> 创维平板电视 </div>
+                                    <p> 30天全网销售：463532件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>3</em>
+                                <div class="inner">
+                                    <div class="title"> TCL平板电视 </div>
+                                    <p> 30天全网销售：248976件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>4</em>
+                                <div class="inner">
+                                    <div class="title"> 乐视平板电视 </div>
+                                    <p> 30天全网销售：321050件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>5</em>
+                                <div class="inner">
+                                    <div class="title"> 海信平板电视 </div>
+                                    <p> 30天全网销售：499696件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>6</em>
+                                <div class="inner">
+                                    <div class="title"> 长虹平板电视 </div>
+                                    <p> 30天全网销售：324780件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>7</em>
+                                <div class="inner">
+                                    <div class="title"> 索尼平板电视 </div>
+                                    <p> 30天全网销售：300836件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>8</em>
+                                <div class="inner">
+                                    <div class="title"> 康佳平板电视 </div>
+                                    <p> 30天全网销售：316902件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>9</em>
+                                <div class="inner">
+                                    <div class="title"> 海尔平板电视 </div>
+                                    <p> 30天全网销售：228556件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productList.html?categoryid=0&amp;pageid=1">
+                                <em>10</em>
+                                <div class="inner">
+                                    <div class="title"> 夏普平板电视 </div>
+                                    <p> 30天全网销售：590500件 </p>
+                                    <span>›</span>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul> -->
+                </section>
+                <!-- 销量排行 -->
+                <section class="brandSales" id="section2">
+                    <ul>
+                        <li>暂无数据</li>
+                    </ul>
+                    <!-- <ul> 
+                        <li>
+                            <a href="zwx_productDetails.html?productId=1" title="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视">
+                                <div class="pic">  </div>
+                                <div class="info">
+                                    <div class="title"> 乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视 </div>
+                                    <div class="price"><em>￥3266.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(6)</em><em>评论(3522)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=37" title="飞利浦(Philips)  HTB3551/93  5.1声道立柱式影院">
+                                <div class="pic"> 
+                                    <img src="http://img2014.zuyushop.com/ProPic/20146/Thumb/Thumb_2014060013462043295.jpg" alt="飞利浦(Philips)  HTB3551/93  5.1声道立柱式影院" width="100" height="100"> 
+                                </div>
+                                <div class="info">
+                                    <div class="title"> 
+                                        飞利浦(Philips)  HTB3551/93  5.1声道立柱式影
+                                    </div>
+                                    <div class="price">
+                                        <em>￥2299.00</em> 
+                                        <span class="star5"></span>
+                                    </div>
+                                    <div class="other">
+                                        <em>报价(7)</em>
+                                        <em>评论(668)</em>
+                                    </div>
+                                </div>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="zwx_productDetails.html?productId=38" title="飞利浦(Philips)    HTD3540/93  5.1声道立柱式影院">
+                                <div class="pic">  
+                                    
+                                </div>
+                                <div class="info">
+                                    <div class="title"> 飞利浦(Philips)    HTD3540/93  5.1声道立柱式影院 </div>
+                                    <div class="price"><em>￥1098.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(5)</em><em>评论(548)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="雅马哈(Yamaha) NS-PA40+RX-V377  5.1声道立柱式影院">
+                                <div class="pic"> <img src="http://pro.zuyushop.com:8015/ProPic/201512/Thumb/Thumb_2015120013225616250.jpg" alt="雅马哈(Yamaha) NS-PA40+RX-V377  5.1声道立柱式影院" width="100" height="100"> </div>
+                                <div class="info">
+                                    <div class="title"> 雅马哈(Yamaha) NS-PA40+RX-V377  5.1声道立柱式影院 </div>
+                                    <div class="price"><em>￥3089.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(4)</em><em>评论(310)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="先科(SAST) SA-880   卡拉OK功放音响">
+                                <div class="pic">  </div>
+                                <div class="info">
+                                    <div class="title"> 先科(SAST) SA-880   卡拉OK功放音响 </div>
+                                    <div class="price"><em>￥699.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(1)</em><em>评论(110)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="雅马哈(Yamaha) NS-P285 5.1声道卫星式影院">
+                                <div class="pic"> <img src="http://pro2012.manmanbuy.com/ProPic/20121/Thumb/Thumb_2012010009494115687.jpg" alt="雅马哈(Yamaha) NS-P285 5.1声道卫星式影院" width="100" height="100"> </div>
+                                <div class="info">
+                                    <div class="title"> 雅马哈(Yamaha) NS-P285 5.1声道卫星式影院 </div>
+                                    <div class="price"><em>￥1111.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(4)</em><em>评论(139)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="三星(SAMSUNG) HT-F453RK 5.1声道立柱式影院">
+                                <div class="pic">  </div>
+                                <div class="info">
+                                    <div class="title"> 三星(SAMSUNG) HT-F453RK 5.1声道立柱式影院 </div>
+                                    <div class="price"><em>￥1359.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(4)</em><em>评论(333)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="飞利浦(Philips)   HTD5540/93 5.1声道落地式影院">
+                                <div class="pic"> <img src="http://img2013.zuyushop.com/ProPic/20135/Thumb/Thumb_2013050020044339629.jpg" alt="飞利浦(Philips)   HTD5540/93 5.1声道落地式影院" width="100" height="100"> </div>
+                                <div class="info">
+                                    <div class="title"> 飞利浦(Philips)   HTD5540/93 5.1声道落地式影院 </div>
+                                    <div class="price"><em>￥1499.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(2)</em><em>评论(151)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="飞利浦(Philips)   CSS7235Y  5.1声道卫星式影院">
+                                <div class="pic">  </div>
+                                <div class="info">
+                                    <div class="title"> 飞利浦(Philips)   CSS7235Y  5.1声道卫星式影院 </div>
+                                    <div class="price"><em>￥6999.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(7)</em><em>评论(534)</em></div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0" title="飞利浦(Philips)   XS1  无线蓝牙回音壁影院">
+                                <div class="pic"> <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_2015100014444969683.jpg" alt="飞利浦(Philips)   XS1  无线蓝牙回音壁影院" width="100" height="100"> </div>
+                                <div class="info">
+                                    <div class="title"> 飞利浦(Philips)   XS1  无线蓝牙回音壁影院 </div>
+                                    <div class="price"><em>￥3988.00</em> <span class="star5"></span></div>
+                                    <div class="other"><em>报价(4)</em><em>评论(178)</em></div>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul> -->
+                </section>
+                <!-- 最新评论 -->
+                <section class="brandComments" id="section3">
+                    <ul>
+                        <li>暂无数据</li>
+                    </ul>
+                    <!-- <ul> 
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0">
+                                <div class="commentTitle">
+                                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视" width="100" height="100"><span>乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</span></div>
+                                <div class="commentBox">
+                                    <div class="name"> b***r<span class="star"><em class="star5"></em></span><i>2016/10/1</i></div>
+                                    <div class="content"> 使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线 </div>
+                                    <div class="from"> 购买自：京东商城 </div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0">
+                                <div class="commentTitle">
+                                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_2015100015564199792.jpg" alt="飞利浦(Philips)    HTD3540/93  5.1声道立柱式影院" width="100" height="100"><span>飞利浦(Philips)    HTD3540/93  5.1声道立柱式影院</span></div>
+                                <div class="commentBox">
+                                    <div class="name"> s***r<span class="star"><em class="star5"></em></span><i>2016/5/17</i></div>
+                                    <div class="content"> 如果再给一次选择肯定会在它自家商城买，乐视商城是2041LG屏好东西果然留给自己，这里的基本是fa2001型号友达屏，右下角有一个坏点，在全黑屏下有一些不明显的白斑，正常使用不影响就没有换，真正有影响的是音响效果，我外接一个几十元的蓝牙小音响都比自带的强多了，和之前的sharp电视无法比，系统刚开机会很卡，开机上个厕所回来就差不多吧，2238单是硬件已经没有优势，乐视会员也很鸡肋，按60元一年，5年会员就折300，勉强可以接受，还有9个月体育会员送 </div>
+                                    <div class="from"> 购买自：京东商城 </div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0">
+                                <div class="commentTitle">
+                                <img src="http://pro.zuyushop.com:8015/ProPic/201512/Thumb/Thumb_2015120011155144360.jpg" alt="先科(SAST) SA-880   卡拉OK功放音响" width="100" height="100"><span>先科(SAST) SA-880   卡拉OK功放音响</span></div>
+                                <div class="commentBox">
+                                    <div class="name"> 139*****15<span class="star"><em class="star5"></em></span><i>2016/6/14</i></div>
+                                    <div class="content"> 关注乐视智能电视很长一段时间了，这次买了套新小房，本人未加思考，果断买了乐视超级电视50寸（房子小，否则买大些的），到货很快，预约师傅上门安装，安装师傅很细心负责，量好尺寸，安装好挂架，注册账号，调试，经一个晚上的研究，发现智能电视就是不一样，本人的宽带为移动20M，有线连接，观看特流畅，画面清晰，还送了30个月看片权根，然让人失望的是不能看直播，后来下载一个电视软件，终于解决了这个问题，此外，该电视还能通过远程管理与身边的手机，平板进行WIFI连接，浏览手机，平板存放里的视频和照片，真是太喜欢了，50寸的电视薄而轻，性价比特高，真的值得拥有，乐视我爱死你了，望你们发扬光大，强我民族，为国争光。 </div>
+                                    <div class="from"> 购买自：苏宁易购 </div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0">
+                                <div class="commentTitle">
+                                <img src="http://img2014.zuyushop.com/ProPic/20146/Thumb/Thumb_2014060013455623387.jpg" alt="三星(SAMSUNG) HT-F453RK 5.1声道立柱式影院" width="100" height="100"><span>三星(SAMSUNG) HT-F453RK 5.1声道立柱式影院</span></div>
+                                <div class="commentBox">
+                                    <div class="name"> t***2<span class="star"><em class="star5"></em></span><i>2016/4/28</i></div>
+                                    <div class="content"> 两周评测，字数有限1.价钱，性价还算高，4.14活动日2200+买的，第三天到货。在50寸智能平板电视并且价位在20左右的电视中算是值得推荐的一款。2.屏幕，在设置超清的情况下基本满足了我的肉眼需求，1080p的视频需要网速支持。电视不支持4K和3D。一些卫视频道程序不是太理想，和网络电视的成像有明显区别（都是设置超清的情况下），屏幕成像方面肯定还是专业的大厂商好，这需要长时间的调试和磨合。3.性能，开机第一天发现一个BUG，更新后已被改善。系统整体还算流畅，偶尔在使用诚信时会有一些卡顿现象，但不影响整体。尽量不要安装太多第三方软件，毕竟优化方面并不完善，都属于测试阶段。2G内存还算不错，8G的储存空间就显得太少了4.用户体验，开机15左右广告，并没有影响我看电视的心情，可能是我反应迟钝；系统优化和交互设计还是比较传统，有待加强；不能卸载预装软件这点十分不爽！！。5.总之价位如果在20上下值得购买，30上下不值得买。6.快递大哥人很好，态度也不错 </div>
+                                    <div class="from"> 购买自：京东商城 </div>
+                                </div>
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="zwx_productDetails.html?productId=0">
+                                <div class="commentTitle">
+                                <img src="http://pro.zuyushop.com:8015/ProPic/20156/Thumb/Thumb_2015060009574137817.jpg" alt="飞利浦(Philips)   CSS7235Y  5.1声道卫星式影院" width="100" height="100"><span>飞利浦(Philips)   CSS7235Y  5.1声道卫星式影院</span></div>
+                                <div class="commentBox">
+                                    <div class="name"> l***1<span class="star"><em class="star5"></em></span><i>2016/4/16</i></div>
+                                    <div class="content"> 音质好外观漂亮智能电视一般有网络功能画面清晰清晰度不错4K超高清送了底座 </div>
+                                    <div class="from"> 购买自：京东商城 </div>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul> -->
+                </section>
+            </div>
+          </div>
+          <!-- 底部随着内容滚动 两个footer二选一即可 -->
+          <footer id="footer">
+              <div class="foot_top">
+                <a href="##">登录</a> 
+                <a href="##">注册</a> 
+                <a href="javascript:mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);">
+                  <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 
+                  返回顶部
+                </a>
+                </div>
+              <div class="footer_bottom">
+                  <p>
+                    <a href="##">手机APP下载</a> 
+                    <a href="hyl_index.html">
+                      慢慢买手机版-- 掌上比价平台
+                    </a>
+                  </p>
+                  <p>m.manmanbuy.com</p>
+              </div>
+          </footer>
+        </div>
+      </div>
+  </main>
+  <!-- 底部固定在最下面 -->
+  <!-- <footer id="footer">
+      <div class="foot_top">
+        <a href="##">登录</a> 
+        <a href="##">注册</a> 
+        <a href="#">
+          <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 
+          返回顶部
+        </a>
+        </div>
+      <div class="footer_bottom">
+          <p>
+            <a href="##">手机APP下载</a> 
+            <a href="hyl_index.html">
+              慢慢买手机版-- 掌上比价平台
+            </a>
+          </p>
+          <p>m.manmanbuy.com</p>
+      </div>
+  </footer> -->
+</body>
+
+</html>
+<!-- 引包 -->
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<!-- <script src="./lib/mui/js/mui.lazyload.js"></script>
+<script src="./lib/mui/js/mui.lazyload.img.js"></script>
+<script src="./lib/mui/js/mui.picker.js"></script>
+<script src="./lib/mui/js/mui.poppicker.js"></script>
+<script src="./lib/zepto/fx.js"></script>
+<script src="./lib/zepto/selector.js"></script>
+<script src="./lib/zepto/touch.js"></script> -->
+<script src="./lib/zepto/zepto.min.js"></script>
+<!-- 自己写的文件 -->
+<script src="./js/dxz_brand_content.js"></script>
+<script>
+  // mui-scroll-wrapper 初始化代码 
+  mui('.mui-scroll-wrapper').scroll({
+    deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+  });
+
+  // 解析html代码
+  template.defaults.escape=false;
+</script>
+
+<!-- 商品品牌排行模板 -->
+<script type="text/template" id="tmpl-brandRanks">
+    {{each result}}
+    <li>
+        <a href="zwx_productList.html?categoryid={{$value.categoryId}}">
+            <em>{{$index+1}}</em>
+            <div class="inner">
+                <div class="title">{{$value.brandName}}</div>
+                <p>{{$value.brandInfo}}</p>
+                <span>›</span>
+            </div>
+        </a>
+    </li>  
+    {{/each}}
+</script>
+<!-- 销量排行模板 -->
+<script type="text/template" id="tmpl-brandSales">
+    {{each result}}
+    <li>
+        <a href="zwx_productDetails.html?productId={{$value.productId}}&categotyId={{$value.categoryId}}" 
+           title="{{$value.productName}}">
+            <div class="pic">  
+                {{$value.productImg}}
+            </div>
+            <div class="info">
+                <div class="title">{{$value.productName}}</div>
+                <div class="price">
+                    <em>{{$value.productPrice}}</em> 
+                    <span class="star5"></span>
+                </div>
+                <div class="other">
+                    <em>{{$value.productQuote}}</em>
+                    <em>{{$value.productCom}}</em>
+                </div>
+            </div>
+        </a>
+    </li>  
+    {{/each}}
+</script>
+<!-- 最新评论模板 -->
+<script type="text/template" id="tmpl-brandComments">
+    {{each result}}
+    <li>
+        <a href="zwx_productDetails.html?productId={{$value.productId}}&categoryId={{$value.categoryId}}">
+            <div class="commentTitle">
+                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视" width="100" height="100">
+                <span>
+                    乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视
+                </span>
+            </div>
+            <div class="commentBox">
+                <div class="name"> 
+                    {{$value.comName}}
+                    <span class="star">
+                        <em class="star5"></em>
+                    </span>
+                    <i>{{$value.comTime}}</i>
+                </div>
+                <div class="content"> 
+                    {{$value.comContent}}
+                </div>
+                <div class="from">{{$value.comFrom}}</div>
+            </div>
+        </a>
+    </li> 
+    {{/each}}
+</script>

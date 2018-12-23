@@ -45,7 +45,8 @@
 		<div class="list-title-content"><span>超值折扣推荐</span> <img src="images/more.png" width="20" height="20"></div>
 	</section>
 	<script type="text/html" id="indexWares">
-		<% for(var i=0; i< result.length; i++){ %> <li class="clearfix ui-border-b">
+		<% for(var i=0; i< result.length; i++){ %> 
+			<li class="clearfix ui-border-b">
                 	<a href="save-sale.html?productid=<%= result[i].productId%>">
                 		<div class="pic"> <%=# result[i].productImgSm%> </div>
                 		<div class="clearfix info">
@@ -74,7 +75,7 @@
 		<div class="foot_top"><a href="login.html">登录</a> <a href="register.html">注册</a> <a href="##" style="width: 40%; border: 0;"
 			 id="rtt"><img src="images/top.png" width="16" height="16">返回顶部</a></div>
 		<div class="footer">
-			<p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 --
+			<p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.html" tppabs="##" style="color:#bebebe;">慢慢买手机版 --
 					掌上比价平台</a></p>
 			<p>m.manmanbuy.com</p>
 		</div>
