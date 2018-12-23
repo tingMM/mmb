@@ -5,6 +5,8 @@
 /* 页面的文字都默认14px */
 body {
   font-size: 0.14rem;
+  height: 100vh;
+  padding-top: .87rem;
 }
 li {
   list-style: none;
@@ -19,6 +21,8 @@ img {
 #header {
   position: fixed;
   height: .44rem;
+  top: 0;
+  left: 0;
   z-index: 999;
   background-color: #ff4e49;
   width: 100vw;
@@ -60,7 +64,8 @@ img {
 }
 #nav {
   position: fixed;
-  padding-top: .44rem;
+  top: .44rem;
+  left: 0;
   z-index: 990;
   width: 100vw;
   background-color: #ffffff;
@@ -115,12 +120,9 @@ img {
   line-height: .37rem;
 }
 #main {
-  padding-top: 81px;
   position: relative;
   height: 100%;
-}
-#main .product {
-  padding: 6px;
+  margin: 0 .06rem;
 }
 #main .product ul {
   display: flex;
@@ -138,7 +140,7 @@ img {
   box-shadow: 0 3px 3px #ccc;
 }
 #main .product ul li a img {
-  width: 80%;
+  height: 1.2439rem;
   display: block;
   margin: 0 auto 10px;
 }
