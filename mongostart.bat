@@ -1,3 +1,2 @@
 cd ./mongodb;
-
-mongod --dbpath data
+mongod --dbpath data;
