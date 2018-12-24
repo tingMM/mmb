@@ -19,4 +19,6 @@ mongoimport -d manmanmai -c brandtitles --file brandTitledb.json --type json;
 mongoimport -d manmanmai -c coupons --file coupondb.json --type json;
 mongoimport -d manmanmai -c indexmenus --file indexMenu.json --type json;
 
-mongod --dbpath data
+rm -rf mongod.lock;
+
+mongod --dbpath data;
