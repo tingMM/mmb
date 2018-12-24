@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/hyl_index.less">
+    <script src="lib/less/less.js"></script>
+    <script src="js/common/rem.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><a href="#"><img src="./images/header_logo.png" alt=""></a></div>
+        <div class="download"><a href="#"><img src="./images/header_app.png" alt=""></a></div>
+    </header>
+    <section id="form-search">
+        <form action="#" class="search-form">
+            <input class="search-box" type="search" placeholder="请输入你想比价的商品">
+            <input class="search-btn" type="botton" value="搜索">
+        </form>
+    </section>
+    <section id="search-title">
+        <ul class="search-list">
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+            <li><a href="#"><img src="./images/ic_cu.png" alt=""><p>省钱控</p></a></li>
+        </ul>
+    </section>
+    <section id="slider">
+            <!-- mui-slider轮播图大容器 类似于 swiper-container -->
+            <div id="slider" class="mui-slider">
+                <!-- Mui 轮播图组件 类似于所有图片容器swiper-wrapper -->
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="images/banner04.jpg">
+                        </a>
+                    </div>
+                    <!-- 第一张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner01.jpg">
+                        </a>
+                    </div>
+                    <!-- 第二张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner02.jpg">
+                        </a>
+                    </div>
+                    <!-- 第三张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner03.jpg">
+                        </a>
+                    </div>
+                    <!-- 第四张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner04.jpg">
+                        </a>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="images/banner01.jpg">
+                        </a>
+                    </div>
+                </div>
+                <!-- 轮播图的小圆点容器 类似于swiper-pagination -->
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+        </section>
+    <section id="list-title">
+        <div class="list-title-content"><span>超值折扣推荐</span><img src="./images/more.png" alt=""></div>
+    </section>
+    <section id="banner">
+        <ul>
+            <li><a href="#" class="product-list">
+                <div class="product-img"><img src="images/ic_pp.png" alt=""></div>
+                <div class="product-msg">
+                    <div><span>移动端：法国进口波尔多十字布伊堡干白葡萄酒750ml </span></div>
+                    <div class="jd-comment">
+                        <i class="mall">京东商城| </i>
+                        <span class="product-comment">
+                            <i class="">我</i>
+                            <i></i>
+                        </span>
+                    </div>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <main id="recommen-product">
+        <div class="recommen-product-list product-list cu-list">
+            <ul></ul>
+            <div class="more-bar"><a href="moneyctrl.html">更多优惠信息 »</a></div>
+        </div>
+    </main>
+    <section id="recommen" class="list-title">
+        <div class="list-title-content"><span>品牌排行</span> <img src="images/more.png" width="20" height="20"></div>
+    </section>
+    <footer id="ctl00_foot">
+            <div class="foot_top"><a href="login.html">登录</a> <a href="register.html">注册</a> <a href="##" style="width: 40%; border: 0;"
+                 id="rtt"><img src="images/top.jpg" width="16" height="16">返回顶部</a></div>
+            <div class="footer">
+                <p><a href="##" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 --
+                        掌上比价平台</a></p>
+                <p>m.manmanbuy.com</p>
+            </div>
+    </footer>
+    <i class="mui-icon-extra-comment"></i>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/hyl_index.js"></script>
+</body>
+
+</html>

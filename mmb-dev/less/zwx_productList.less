@@ -1,0 +1,50 @@
+@import "dxz_common.less";
+#navigation {
+    flex: 0;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .14rem;
+    box-shadow: 0 0 .1rem .01rem rgba(0,0,0,.1)
+}
+
+#main {
+    .product-list {
+        .product {
+            display: flex;
+            .pic {
+                flex: 0 0 1rem;
+            }
+            .detail {
+                flex: 1;
+                padding: .1rem;
+                .productPrice {
+                    height: 0.45rem;
+                    font-size: .2rem;
+                    font-weight: 700;
+                    font-family: simsun;
+                    line-height: .45rem;
+                    color: #ea3900;
+                    display: flex;
+                    justify-content: space-between;
+                    .stars {
+                        img {
+                            width: 0.18rem;
+                        }
+                    }
+                }
+                .other {
+                    text-align: right;
+                    font-size: 0.12rem;
+                    color: #a1a1a1;
+                }
+            }
+        }
+    }
+}

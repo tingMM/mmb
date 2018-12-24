@@ -1,0 +1,30 @@
+@import 'dxz_common';
+
+@fontColor:#333;
+#main {
+    font-size: 16px;
+    .accordion-title {
+        height: 35px;
+        line-height: 35px;
+        padding-left: 10px;
+        background-color: 4#f7f7f7;
+        font-size: inherit;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+        >a {
+            color: @fontColor;
+            font-size: inherit;
+            >i {
+                font-size: inherit;
+            }
+        }
+    }
+    // 热门品牌排行
+    .brand-title-rank {
+        font-size: inherit;
+        color:  @fontColor;
+        padding-left: 10px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}
