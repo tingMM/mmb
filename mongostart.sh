@@ -1,5 +1,6 @@
 cd ./mongodb;
 
+# 该表暂未使用
 mongoimport -d manmanmai -c productList --file productlist.json --type json;
 
 mongoimport -d manmanmai -c productlists --file productListdb.json --type json;
